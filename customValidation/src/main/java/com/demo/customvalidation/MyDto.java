@@ -21,7 +21,9 @@ public class MyDto {
 
     private List<DummyChild> mobileNumber;
 
-    private NestedChild child;
+
+    @CustomField(message = "actionType must valid")
+    private ActionType actionType;
 
     // Other fields and their getters/setters
 

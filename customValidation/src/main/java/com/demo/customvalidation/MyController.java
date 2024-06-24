@@ -53,7 +53,7 @@ public class MyController {
 
     private void extracted(MyDto myDto, BindingResult bindingResult) {
         validator.validate(myDto, bindingResult);
-        validator.validate(myDto.getChild(), bindingResult);
+       // validator.validate(myDto.getChild(), bindingResult);
         myDto.getMobileNumber().forEach(c -> {
             validator.validate(c, bindingResult);
             validator.validate(c.getChild(), bindingResult);
